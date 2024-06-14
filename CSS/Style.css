@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+.home{
+    background-image: url(../img/contact-details-map.png);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}

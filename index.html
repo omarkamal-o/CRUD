@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+ 
+<div class="home">
+    <div class="text-white">.</div>
+    <div class="container bg-light rounded-4 shadow pb-4 pt-2 mt-4">
+        <h1 class="title mt-3 pb-2">Product Management System</h1>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control border-0 border-bottom" id="productname" placeholder="productname">
+            <label for="productname">Product Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="number" class="form-control border-0 border-bottom" id="productprice" placeholder="productprice">
+            <label for="productprice">Product Price</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input list="Category" type="text" class="form-control border-0 border-bottom" id="productcategory" placeholder="productcategory">
+            <label for="productcategory">Product Category</label>
+            <datalist id="Category"> 
+              <option value="mobile"></option>
+              <option value="TV"></option> 
+              <option value="laotop"></option>  
+              <option value="electronic"></option>     
+            </datalist>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea type="" class="form-control border-0 border-bottom" id="productdescription" placeholder="productdescription"> </textarea>
+            <label for="productdescription">Product Description</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="file" class="form-control border-0 border-bottom" id="productimg" placeholder="productimg">
+            <label for="productimg">Product img</label>
+          </div>
+          <button class="btn btn-outline-primary" onclick="addProduct()">Add Product</button>
+    </div>
+    <div class="container">
+        <div class="row" id="rowData">
+           
+        </div>
+    </div>
+</div>
+
+
+
+
+   <script src="JS/bootstrap.bundle.min.js"></script>
+   <script src="JS/all.min.js"></script>
+   <script src="JS/index.js"></script> 
+</body>
+</html>
